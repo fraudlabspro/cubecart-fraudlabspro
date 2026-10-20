@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<installer version="1.0">
+	<info>
+		<uid>support@fraudlabspro.com</uid>
+		<type>plugins</type>
+		<mobile_optimized>true</mobile_optimized>
+		<name><![CDATA[FraudLabs Pro Anti Fraud]]></name>
+		<description><![CDATA[Screen order for possible fraud.]]></description>
+		<version>1.7.0</version>
+		<minVersion>6.0.0</minVersion>
+		<maxVersion>6.*.*</maxVersion>
+		<creator><![CDATA[FraudLabs Pro]]></creator>
+		<homepage><![CDATA[https://www.fraudlabspro.com]]></homepage>
+	</info>
+
+	<hooks>
+		<hook trigger="admin.order.index.display" enabled="1"><![CDATA[FraudLabs Pro Result Page]]></hook>
+		<hook trigger="admin.order.index.post_process" enabled="1"><![CDATA[Feedback Order Status]]></hook>
+		<hook trigger="class.cubecart.construct.gateway" enabled="1"><![CDATA[Validate Order]]></hook>
+		<hook trigger="class.cubecart.construct.complete" enabled="1"><![CDATA[Validate Credit Card]]></hook>
+	</hooks>
+</installer>
