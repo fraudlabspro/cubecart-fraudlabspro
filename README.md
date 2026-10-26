@@ -1,18 +1,52 @@
-CubeCart FraudLabs Pro Extension Installation
-============================================
-1. Sign up for a free FraudLabs Pro API key at https://www.fraudlabspro.com/sign-up
-2. Upload the FraudLabsPro folder to modules/plugins folder of where the CubeCart installed on the server. For Example, <cubecart>/modules/plugins.
-3. Login to CubeCart admin area.
-4. Click on the "Plugins" menu (under the Modules section), and you should see the FraudLabsPro entry.
-5. Click on the "FraudLabsPro" link to configure the settings.
-6. On the settings page, click on the "red cross" icon to enable the feature. Note: The icon shall show "green check" if it was successfully enabled.
-7. On the settings page, enter the FraudLabs Pro API key.
-8. Click on the "Save" button
-9. Click on the "Manage Hooks" menu (under the Advanced section).
-10. Click on the "FraudLabsPro" link.
-11. Check all checkboxes to enable FraudLabs Pro hooks and save.
-12. You're done.
+# FraudLabs Pro for CubeCart
+
+## Overview
+
+FraudLabs Pro screens every CubeCart order in real time and returns a fraud score with an Approve, Review or Reject decision. Failed orders are marked Fraudulent automatically.
 
 
---------------------------------------------------------------------
-For more information, please visit us at https://www.fraudlabspro.com
+
+## Key Features
+
+* Real-time fraud screening with a fraud score and Approve / Review / Reject decision.
+
+* Failed orders are marked Fraudulent and the payment page is skipped.
+
+* Result tab on the admin order page with geolocation, blacklist, email and BIN checks.
+
+* Approve, Reject and Blacklist actions from the order page.
+
+    
+
+## Sign Up for a Free Micro Plan
+
+Sign up for the free Micro Plan, which validates up to 500 orders per month, at [https://www.fraudlabspro.com/](https://www.fraudlabspro.com/checkout-micro). 
+
+
+
+## Installation
+
+1. Sign up for a FraudLabs Pro API key.
+2. Upload the `fraudlabspro` folder to `modules/plugins/` in your CubeCart installation, for example `<cubecart>/modules/plugins/fraudlabspro`.
+3. Log in to the CubeCart admin area.
+4. Open **Modules → Plugins**; the **FraudLabs Pro Anti Fraud** entry should be listed.
+5. Click **FraudLabs Pro** to open its settings page.
+6. Click the red cross icon to enable the extension; it changes to a green check when enabled.
+7. Enter your FraudLabs Pro API key.
+9. Click **Save**.
+10. Open **Advanced → Manage Hooks**, click **FraudLabsPro**, enable all hooks and save.
+11. Installation is complete.
+
+
+
+## Support
+
+* Website: <https://www.fraudlabspro.com>
+* Contact: <https://www.fraudlabspro.com/contact>
+* Email: <support@fraudlabspro.com>
+
+
+
+## License
+
+This extension is released under the MIT License.
